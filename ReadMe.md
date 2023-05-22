@@ -70,3 +70,26 @@ switch (grade) {
         break;
 }
 ```
+
+# İşte bazı yaygın checked ve unchecked exception'ların isimleri:
+
+## Checked Exception'lar:
+
+IOException
+SQLException
+ClassNotFoundException
+FileNotFoundException
+InterruptedException
+ParseException
+
+## Unchecked Exception'lar:
+
+RuntimeException
+NullPointerException
+IllegalArgumentException
+ArrayIndexOutOfBoundsException
+ClassCastException
+ArithmeticException
+Bu sadece bazı örneklerdir ve her bir kategori için daha fazla istisna türü bulunmaktadır. 
+Checked exception'lar, Exception sınıfından türetilen ve RuntimeException sınıfından türetilmeyen istisna sınıflarını içerirken, 
+unchecked exception'lar RuntimeException sınıfından türetilen istisna sınıflarını içerir.
