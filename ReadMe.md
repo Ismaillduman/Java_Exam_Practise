@@ -26,3 +26,29 @@ Here are the rules for using the switch statement in Java:
   These are the general rules that apply to using the switch statement in Java.
 
   It's important to follow these rules to ensure correct and predictable behavior of your code.
+  
+```java
+char grade = 'B';
+switch (grade) {
+    default:
+        System.out.println("Invalid grade");
+        break;
+    case 'A':
+    case 'B':
+    case 'C':
+        System.out.println("Pass");
+        break;
+    case 'D':
+    case 'F':
+        System.out.println("Fail");
+        break;
+}
+```
+```java
+int number = 5;
+switch (number) {
+    default:
+        System.out.println("No case statements matched");
+        break;
+}
+```
