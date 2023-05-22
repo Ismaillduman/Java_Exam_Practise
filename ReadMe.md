@@ -185,3 +185,33 @@ public class MyClass extends SuperClass {
 Ancak, sıralama ihtiyaçlara ve tasarım tercihlerine bağlı olarak değişebilir. Önemli olan, `super();` ve `this();`
 ifadelerinin genellikle yapıcı metot içinde diğer işlemlerden önce yer alması ve yapıcı metot içindeki işlemlerin 
 mantıklı bir sıraya sahip olmasıdır.
+
+# Aşağıda, `int`, `byte`, `char`, `boolean`, `double`, `long`, `float`, `String`, `Integer` ve `Character`
+veri tiplerinin genellikle kabul edilen bir sıralaması bulunmaktadır:
+
+1. `boolean`: Mantıksal bir değeri (`true` veya `false`) temsil eder.
+
+2. `byte`: 8 bit işaretli tam sayı değerini temsil eder.
+
+3. `char`: 16 bit Unicode karakterini temsil eder.
+
+4. `short`: 16 bit işaretli tam sayı değerini temsil eder.
+
+5. `int`: 32 bit işaretli tam sayı değerini temsil eder.
+
+6. `long`: 64 bit işaretli tam sayı değerini temsil eder.
+
+7. `float`: 32 bit kayan noktalı sayı değerini temsil eder.
+
+8. `double`: 64 bit kayan noktalı sayı değerini temsil eder.
+
+9. `String`: Metin veya karakter dizisini temsil eder. 
+Bu veri tipi, bir sınıf olduğu için diğer temel veri tiplerinden ayrılır.
+
+10. `Integer`: `int` değerini saran ve ilave işlevlere sahip bir sınıftır.
+
+11. `Character`: `char` değerini saran ve ilave işlevlere sahip bir sınıftır.
+
+Bu sıralama, genel olarak veri tiplerinin büyüklüklerine veya bellek boyutlarına dayanır.
+Ancak, bazı veri tipleri sınıflar olduğu için farklı işlevlere sahiptir ve sıralama sadece bellek boyutlarına göre belirlenmez.
+
