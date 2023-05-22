@@ -215,3 +215,23 @@ Bu veri tipi, bir sınıf olduğu için diğer temel veri tiplerinden ayrılır.
 Bu sıralama, genel olarak veri tiplerinin büyüklüklerine veya bellek boyutlarına dayanır.
 Ancak, bazı veri tipleri sınıflar olduğu için farklı işlevlere sahiptir ve sıralama sadece bellek boyutlarına göre belirlenmez.
 
+# String == or equals
+
+```java
+String str = "Hello";
+String str1 = "Hello";
+String str2 = new String("Hello");
+
+System.out.println(str == str1);  // true, aynı String nesnesini işaret ediyorlar
+System.out.println(str == str2);  // false, farklı String nesnelerini işaret ediyorlar
+```
+
+Bu örnekte, `str` ve `str1` değişkenleri aynı `String` nesnesini işaret ediyorlar 
+çünkü her ikisi de değer olarak "Hello" metnini içeriyorlar. Bu nedenle, `str == str1` ifadesi `true` dönecektir.
+
+Ancak, `str2` değişkeni `new` anahtar kelimesi ile yeni bir `String` nesnesi oluşturarak "Hello" metnini içeriyor. 
+Bu nedenle, `str` ve `str2` farklı `String` nesnelerini işaret eder.
+Bu durumda, `str == str2` ifadesi `false` dönecektir.
+
+Sonuç olarak, `str` ve `str1` aynı `String` nesnesini işaret ediyorsa, `str == str1` ifadesi `true` döner.
+Ancak, `equals()` metodu kullanılarak içerik tabanlı karşılaştırma yapmak daha yaygın ve güvenilirdir.
