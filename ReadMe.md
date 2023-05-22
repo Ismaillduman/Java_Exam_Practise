@@ -144,3 +144,44 @@ while `this(c);` is used to invoke different constructors.
 
 This(c); ayni class taki bir constructor cagirmak icin 
 Super(c); ise farkli bir sinifin constructor 'i cagirmak icin kullanilir 
+
+
+# `this();`, `this.c = c;` ve `super();` ifadelerinin kullanım sıralaması,
+
+yapıcı metot içindeki işlemlere ve ihtiyaçlara bağlı olarak değişir. 
+Genel bir kural olarak aşağıdaki sıralama tercih edilir:
+
+1. `super();`: Eğer bir alt sınıfın yapıcı metodu içinde `super();` ifadesi kullanıyorsanız, 
+genellikle bu ifade yapıcı metot içindeki ilk işlem olarak kullanılır. 
+Bu şekilde, üst sınıfın yapıcı metodu tamamlanır ve ardından alt sınıfın yapıcı metodu devam eder.
+
+2. `this();`: Eğer bir sınıfın yapıcı metodu içinde başka bir yapıcıyı `this();` ifadesiyle çağırıyorsanız,
+genellikle bu ifade yapıcı metot içindeki ilk işlem olarak kullanılır. 
+Bu şekilde, diğer yapıcı metot çağrısı yapılır ve ardından yapıcı metot içindeki diğer işlemler devam eder.
+
+3. `this.c = c;`: Eğer bir sınıfın yapıcı metodu içinde bir üye değişkene `c` değerini atamak için 
+`this.c = c;` ifadesini kullanıyorsanız, genellikle bu ifade yapıcı metot içinde diğer işlemlerden sonra kullanılır.
+Bu şekilde, diğer inşa işlemleri tamamlandıktan sonra üye değişkene değer atanır.
+
+Örnek kullanım:
+
+```java
+public class MyClass extends SuperClass {
+    private int c;
+    
+    public MyClass() {
+        super(); // Üst sınıfın yapıcı metodu çağrılır
+        this(); // Aynı sınıftaki başka bir yapıcı metodu çağrılır
+        this.c = 0; // Üye değişkene değer atanır
+    }
+    
+    public MyClass(int c) {
+        super(); // Üst sınıfın yapıcı metodu çağrılır
+        this.c = c; // Üye değişkene değer atanır
+    }
+}
+```
+
+Ancak, sıralama ihtiyaçlara ve tasarım tercihlerine bağlı olarak değişebilir. Önemli olan, `super();` ve `this();`
+ifadelerinin genellikle yapıcı metot içinde diğer işlemlerden önce yer alması ve yapıcı metot içindeki işlemlerin 
+mantıklı bir sıraya sahip olmasıdır.
