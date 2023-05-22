@@ -235,3 +235,22 @@ Bu durumda, `str == str2` ifadesi `false` dönecektir.
 
 Sonuç olarak, `str` ve `str1` aynı `String` nesnesini işaret ediyorsa, `str == str1` ifadesi `true` döner.
 Ancak, `equals()` metodu kullanılarak içerik tabanlı karşılaştırma yapmak daha yaygın ve güvenilirdir.
+
+# StringBuilder sb1 = new StringBuilder("Duke"); 
+
+String str = "Duke"; 
+
+ifadesi, string havuzunda ("string pool") zaten var olan bir "Duke" stringi referans eden bir referans oluşturur.
+
+Bu ifade, var olan bir string nesnesine referans yapar.
+
+String str = sb1.toString(); ifadesi ise sb1 nesnesinin içeriğini temsil eden yeni bir string nesnesi oluşturur 
+ve bu nesneyi referans olarak kullanır. Bu ifade, dinamik olarak bir string nesnesi oluşturur
+ve bu nesneye referans yapar.
+
+Dolayısıyla, bu iki ifade farklı string nesnelerini referans alır. 
+Referanslarının değeri (içeriği) aynı olabilir örneğin "Duke" metni, her iki ifadede de kullanılmış olabilir.
+Ancak, referanslarının kendisi (adresleri) farklıdır.
+
+Sonuç olarak, iki ifade farklı referanslara sahip olduğu için, referanslarının eşitlik durumu
+(== operatörüyle kontrol edildiğinde) false olarak değerlendirilecektir.
