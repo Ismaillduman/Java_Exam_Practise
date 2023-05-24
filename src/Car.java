@@ -15,7 +15,7 @@ class Vehicle1{
 	
 	Car1(String trans){
 		// line n1
-super();
+
 		this.trans = trans;
 	}
 	Car1(String type, int maxSpeed, String trans){

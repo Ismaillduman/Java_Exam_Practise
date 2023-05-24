@@ -254,3 +254,30 @@ Ancak, referanslarının kendisi (adresleri) farklıdır.
 
 Sonuç olarak, iki ifade farklı referanslara sahip olduğu için, referanslarının eşitlik durumu
 (== operatörüyle kontrol edildiğinde) false olarak değerlendirilecektir.
+
+# Bir sınıftaki bir değişkene doğrudan erişmek için, değişkenin statik (static) olması gerekmektedir.
+
+Statik bir değişkene sınıf adıyla erişmek için aşağıdaki syntax kullanılabilir:
+
+```
+ClassName.variableName
+```
+
+Örneğin, aşağıdaki şekilde MyClass sınıfındaki static bir değişkene doğrudan erişilebilir:
+
+```java
+public class MyClass {
+    public static int myStaticVariable = 10;
+}
+```
+
+Başka bir sınıfta, MyClass sınıfındaki myStaticVariable'a erişmek için a
+şağıdaki şekilde kullanabilirsiniz:
+
+```java
+int value = MyClass.myStaticVariable;
+```
+
+Bu şekilde, MyClass sınıfına ait bir nesne oluşturmadan myStaticVariable'a erişebilirsiniz.
+Ancak dikkat edin, normalde bir değişkenin erişilebilir olması için 
+uygun erişim belirleyicisi (public, private, protected vb.) kullanılmalıdır.

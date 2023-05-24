@@ -8,10 +8,10 @@ public class Q_30 {
         names.add("Bran");
         names.add("Rick");
         names.add("Bran");
-        names.add("Kevin");
+        //names.add("Kevin");
 
     if (names.remove("Robb" )) {
-            names.remove(2 );
+            names.remove("John" );
         }
         System.out.println(names);
     }
