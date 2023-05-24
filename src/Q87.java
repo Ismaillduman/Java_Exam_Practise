@@ -24,7 +24,7 @@ class MarkList{
 
            Integer s2=400;
             Short s1= 200;
-            String s9= (String) s1;
+           // String s9= (String) s1;
            Long s3= (long)s1+s2;
 
 
