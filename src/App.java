@@ -1,12 +1,11 @@
 
 
 public class App {
-  String greet="Welcome!";
+    String greet="Welcome!";
     public App(){
 
         String greet="Hello!";
-//       System.out.println("ben constructorum once beni yazdir");
-        System.out.println(greet);
+
     }
     public void setGreet(){
         String greet="Good Day!";
