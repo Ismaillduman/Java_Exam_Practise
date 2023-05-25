@@ -1,28 +1,63 @@
 
 
+
+
 public class Test {
-	int x, y;
-	
-	public Test(int x, int y) {
-		initialize(x, y);
-	}
-	
-	public void initialize(int x, int y) {
-		this.x = x * x;
-		this.y = y * y;
-	}
 	
 	public static void main(String[] args) {
-		int x = 3, y =5;
-	Test objTest = new Test(x, y);
-		System.out.println("objTest.x = " + objTest.x+" objTest.y = " + objTest.y);
-		System.out.println();
+		Employee e1 = new Employee(); // defoult contructor olmadigi icin
+			                         //Employee classda hata veriyor.
 
-		System.out.println(x + " " + y); // prints the local variables
-	}
-}
-//What is the result?
-//A.	Compilation fails.
-//B.	3 5
-//C.	0 0
-//D.	9 25
+		Employee e2 = new Employee("Jack",50);
+		Employee e3 = new Employee("Chloe",40,5000);
+		e1.printDetails();
+		e2.printDetails();
+		e3.printDetails();
+		
+		}
+		}
+
+		/*
+		 
+		 Which is the result?
+		 A) Compilation fails in the Employee class
+		 
+		 B) null : 0 : 0
+		  	Jack : 50 : 0
+		 	Chole : 40 : 5000
+		 
+		 C) null : 0 : 0
+		  	Jack : 50 : 2000
+		 	Chole : 40 : 5000
+
+		 D) Compilation fails in the Test class
+		 
+		 E) Both the Employee class and the Test class fail to compile
+		 
+		 cevap: E
+
+		 Employee classda ;constructorda This() ilk satırda yer almalı.
+		  ikinci satıra yazılmıs hata veriyor bu yüzden
+		  
+		 Test class da e1 object olusturulurken default constructor kullanilmis
+		  ama employee classda default constructor yok	
+		  
+		   eger employee class da default constructor olusturup, 
+		   this() i de ilk step de yazarsak kod compile olur.
+		   
+		   hem default constructor tanimlanip hem de this() ilk satırda yazılsaydı cevap:
+
+						null : 0 : 0
+						Jack : 50 : 2000
+						Chloe : 40 : 5000
+
+
+		ibrah note: this up
+	                setSalary down
+
+	              sonuc D oluyor only test class fails
+
+
+		 */
+		
+
