@@ -1,23 +1,28 @@
 
 public class Some{
-    static int count;
-    public static void displayMsg(){
-        System.out.println(count);
-    }
+  String name;
+  int age;
 
     public static void main(String[] args) {
-        Some.displayMsg();
-       displayMsg();
+        String s1 = new String("A");
+        String s2 = new String("B");
+        String s3 = new String("C");
 
+        s1 = s2;
+        s2 = s3;
+        s3 = s1;
 
-       int i=100;
-       float f=100.0f;
-       double d=123;
-       f=i;
-       i=(int)f;
-       f=(float) d;
-       d=f;
-       i=(int)d;
-       d=i;
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+
+        String a="Moon";
+        String b= new String("Moon");
+        if(a.equals(b)&&a==b){
+            System.out.println("True");
+        }else{
+            System.out.println("Not");
+        }
+
     }
         }
