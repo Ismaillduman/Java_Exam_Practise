@@ -51,4 +51,5 @@ public Employee3(String name, int age) {
 	public void printDetails () {
 		System.out.println(name +" : "+age+" : "+salary);
 	}
+
 }

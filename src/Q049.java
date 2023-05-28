@@ -11,7 +11,7 @@ public class Q049 {
 
 		int y2 = 100; float fit3= (float)y2;
 
-		float fit4 = 100.00F;
+		Float fit4 = 100.00F;
 
 
 		int n [] [] = {{1, 3}, {2, 4}};

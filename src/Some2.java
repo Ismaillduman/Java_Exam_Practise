@@ -1,5 +1,5 @@
 
-public class Some{
+public class Some2{
   String name;
   int age;
 

@@ -15,8 +15,8 @@ public class Q008 {
 
 
 			}
-			continue; //etkisi yok
 
+			continue; //etkisi yok
 		}
 
 	}

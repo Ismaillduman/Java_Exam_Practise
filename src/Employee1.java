@@ -17,10 +17,37 @@ public class Employee1 {
 		return name + ":" + contract + ":" + salary;	
 	}	
 	public static void main(String[] args) {
-		Employee1 e = new Employee1();
+		Employee1 e1 = new Employee1();
+		Employee1 e2 = new Employee1();
+		Employee1 e3 = new Employee1();
+
+		e1=e3;
+		e3=e2;
+		e2=null;
 		// line2
 		//e.name="elif";
-		System.out.println(e);		
+		System.out.println(e1);
+		System.out.println(e2);
+		System.out.println(e3);
+		System.out.println("==========================");
+		StringBuilder x= new StringBuilder();
+
+		System.out.println(x);
+		System.out.println(new StringBuilder("java"));
+
+		System.out.println("===================================================");
+		int[][] array= new int[2][2]; //length 2
+		array[0][0]=1;
+		array[0][1]=2;
+		array[1][0]=3;
+		array[1][1]=4;
+
+
+		for (int i = 0; i <2; i++) {
+			for (int j = 0; j < array.length; j++) {
+				System.out.println(array[i][j]);
+			}
+		}
 	}
 }
 /* 

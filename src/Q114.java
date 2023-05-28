@@ -12,9 +12,9 @@ public class Q114 {
                 System.out.println(arr[i][j]+" ");
             }
 
-            //
+           // break;//
         }
-        //break;
+
 
         //System.out.println(LocalDate.of(6, 20, 2014));
         System.out.println("===========================");
