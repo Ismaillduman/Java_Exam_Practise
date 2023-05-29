@@ -14,13 +14,14 @@ class Vehicle1{
 	String trans;
 	
 	Car1(String trans){
+		//super("",2);
 		// line n1
 
 		this.trans = trans;
 	}
 	Car1(String type, int maxSpeed, String trans){
 		super(type, maxSpeed);	// line n2
-		this.trans =trans;
+		this.trans=trans;
 	}
 	public static void main(String[] args) {
 		Car1 c1 = new Car1("Auto");
