@@ -5,8 +5,8 @@ public class MyField {
     int y;
 
     public void doStuff(int x, int y) {
-        x = x;
-        y = this.y;
+        x =x;
+        y =this.y;
 
 //		this.x=x;
 //		this.y=y;
