@@ -16,9 +16,9 @@ public class Q008 {
 
 			}
 
-			continue; //etkisi yok
+			 //etkisi yok
 		}
-
+		//continue;
 	}
 }
 //What is the result? 

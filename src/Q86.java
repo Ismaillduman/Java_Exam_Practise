@@ -2,6 +2,13 @@
 
 
 public class Q86 {
+    static int x;
+    public static void sum(){
+
+    }
+    public class A{
+
+    }
 
 }
 

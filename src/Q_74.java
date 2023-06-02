@@ -1,14 +1,24 @@
 
 
 public class Q_74 {
-	public static void main(String[] args) {
-		int ii=0;
-		int jj=7;
-		for(ii=0; ii<jj; ii+=2) { 
-			System.out.print(ii+" ");
+
+	void readCard(int cardNo) throws Exception{
+		System.out.println("Reading Card");
+	}
+	void checkCard(int cardNo) throws RuntimeException{
+		System.out.println("Checking Card");
+	}
+
+
+	public static void main(String[] args) throws Exception {
+		Q_74 ex = new Q_74();
+
+		int cardNo=12344;
+		ex.readCard(cardNo);
+		ex.checkCard(cardNo);
 		}
 		
-		System.out.println();
+
 		//answer 0 2 4 6
 		//second version
 		
@@ -17,7 +27,7 @@ public class Q_74 {
 //				System.out.print(ii+" ");
 //			}
 		}
-}
+
 
 
 

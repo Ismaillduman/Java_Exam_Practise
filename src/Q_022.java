@@ -3,7 +3,7 @@
 public class Q_022 {
 
 	public static class Sum{
-		int x=20;
+		int x;
 	}
 
 	public static void main(String[] args) {
@@ -12,18 +12,15 @@ public class Q_022 {
 		try {
 			int num = 10;
 			int div = 0;
-			ans = num / div;
+			//ans = num / div;
 		} catch (ArithmeticException ae) {
-			ans = 0;												// line n1
+			//ans = 0;												// line n1
 		}catch (Exception e) {
 			System.out.println("Invalid calculation");
 		}
-		Sum sum= new Sum();
-		sum.x=40;
-		System.out.println(sum.x);
-		System.out.println(x);
 
-	//System.out.println("Answer = " + ans);	// line n2
+
+	///System.out.println("Answer = " + ans);	// line n2
 		// ans is initialized in the try-catch block, can not be seen outside the block
 	}
 }

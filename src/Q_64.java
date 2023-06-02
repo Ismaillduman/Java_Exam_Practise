@@ -18,7 +18,7 @@ class MyString {
                 ;
     }
 }
-//Test.java:
+//Test6.java:
 //package p1;
 public class Q_64 {
     public static void main(String[] args) {
