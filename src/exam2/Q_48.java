@@ -21,6 +21,9 @@ public class Q_48 {
             boolean b= new Boolean("True");
             //boolean v= True;
             System.out.println(b);
+
+            StringBuilder sb = new StringBuilder();
+            System.out.println(sb.append("").append("").append("").length());
         }
     }
 
