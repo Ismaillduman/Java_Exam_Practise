@@ -9,5 +9,8 @@ public class Q_2 {
         System.out.println(date);
         System.out.println("==========");
         System.out.println( date.minusDays(10));
+
+        Float f=100.00F;
+        float fit = (float) 1_11.00;
     }
 }

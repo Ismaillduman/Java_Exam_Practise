@@ -12,18 +12,19 @@ class Vehicle1{
 }
  class Car1 extends Vehicle1 {
 	String trans;
-	
+
 	Car1(String trans){
-		//super("",2);
+		super();
 		// line n1
 
 		this.trans = trans;
 	}
 	Car1(String type, int maxSpeed, String trans){
-		super(type, maxSpeed);	// line n2
+		super();	// line n2
 		this.trans=trans;
 	}
 	public static void main(String[] args) {
+		//Vehicle1 c3 = new Car1();
 		Car1 c1 = new Car1("Auto");
 		Car1 c2 = new Car1("4W",  150, "Manual")	;
 		System.out.println(c1.type + " " + c1.maxSpeed + " " + c1.trans);

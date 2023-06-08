@@ -27,5 +27,5 @@ B.	Make the method at line 8 public.
 C.	Make the method at line 10 protected.
 D.	Make the method at line 4 public.
 E.	Make the method at line 2 public.
-Answer: AC veya BC ikiside calisir
+
  */

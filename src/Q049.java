@@ -21,6 +21,7 @@ public class Q049 {
 				System.out.print(y);
 			}
 		}
+
 	}
 }
 
