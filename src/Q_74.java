@@ -1,8 +1,9 @@
-
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class Q_74 {
 
-	void readCard(int cardNo) throws Exception{
+	void readCard(int cardNo) throws FileNotFoundException {
 		System.out.println("Reading Card");
 	}
 	void checkCard(int cardNo) throws RuntimeException{
@@ -10,7 +11,7 @@ public class Q_74 {
 	}
 
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws FileNotFoundException  {
 		Q_74 ex = new Q_74();
 
 		int cardNo=12344;

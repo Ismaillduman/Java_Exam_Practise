@@ -15,17 +15,17 @@ class number {
 }
 class Test3{
     public static void main(String[] args){
-        int arr[]=new int[2];
-        arr[0]=1;
-        arr[1]=1;
-        arr=new int[4];
-        arr[2]=30;
-        arr[3]=40;
-        System.out.println(Arrays.toString(arr));
+//        int arr[]=new int[2];
+//        arr[0]=1;
+//        arr[1]=1;
+//        arr=new int[4];
+//        arr[2]=30;
+//        arr[3]=40;
+//        System.out.println(Arrays.toString(arr));
 
 //        System.out.println("================================");
 //        Student3 [] Student3s= new Student3[3];;
-//        Student3s[0]=new Student3("A");
+//        //Student3s[0]=new Student3("A");
 //        Student3s[1]=new Student3("Richard");
 //        Student3s[2]=new Student3("Donald");
 //
@@ -38,6 +38,15 @@ class Test3{
 //        for (int i : arr2) {
 //            System.out.println(i);
 //        }
+
+        StringBuilder s= new StringBuilder("hi");
+       // s.append(" "+s);
+        System.out.println(s);
+        String x= "hi";
+        //x.concat(x);
+        System.out.println(x);
+        System.out.println(s.toString().equals(x));
+        System.out.println(s.toString()==x);
      }
 
 //second way

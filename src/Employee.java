@@ -5,9 +5,9 @@ public class Employee {
     private int age;
     private int salary;
 
-//  public Employee(){
+  public Employee(){
 
-//    }
+    }
      public Employee(String name, int age) {
          setName(name);
          setAge(age);
@@ -33,14 +33,25 @@ public class Employee {
     }
 }
 class Test{
-    public static void main(String[] args) {
-      //Employee e1 = new Employee();  //we need to create default constructor
+    public static void main(String[] a) {
+      Employee e1 = new Employee();  //we need to create default constructor
         Employee e2 = new Employee("Jack", 50);
         Employee e3 = new Employee("Chloe", 40, 5000);
 
-      //e1.printDetails();
+      e1.printDetails();
         e2.printDetails();
         e3.printDetails();
+
+        String x = null;
+        x=x+null;
+        System.out.println(x.length());
+
+        System.out.println("=======================================");
+        String [] num=new String[5];
+        for (String i : num) {
+            System.out.println(i.length());
+        }
+
     }
 
 }

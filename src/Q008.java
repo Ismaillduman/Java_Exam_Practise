@@ -18,6 +18,10 @@ public class Q008 {
 
 			 //etkisi yok
 		}
+		String x="asdf";
+		String y="aklökölö";
+		StringBuilder s= new StringBuilder(x);
+		System.out.println(s.append(y, 3,8));
 		//continue;
 	}
 }

@@ -13,19 +13,19 @@ public class Q_190 {
             throw new E1();
         }
 
-        public void m2() throws E1 { // You can throw any exception here to solve the problem.
+        public void m2() throws E2 { // You can throw any exception here to solve the problem.
 
-           m1();
+
                 System.out.println("m2.Accessed.");
                 throw new E2();
 
         }
 
-        public static void main(String[] args) throws E1 { // starts to read codes from main method
+        public static void main(String[] args)  { // starts to read codes from main method
             int level = 1;                            // ONLY CHANGE
             Q_190 obj = new Q_190();
             if (level <= 5 && level >= 3) { // ==> true now!!
-                obj.m1();// ==> executed -- causes compilation error
+                //obj.m1();// ==> executed -- causes compilation error
             } else {
                 obj.m2();
             }

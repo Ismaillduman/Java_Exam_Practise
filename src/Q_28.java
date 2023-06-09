@@ -5,12 +5,21 @@ import java.util.List;
 public class Q_28 {
 
     public static void main(String[] args) {
-        String[] arr = {"Hi", "Howl", "Arel", "Youl"};
+        String[] arr = {"Hiss", "Howl", "Arel", "Youl"};
         List<String> arrList = new ArrayList<>(Arrays.asList(arr));
         if(arrList.removeIf(s -> {System.out.print(s); return s.length() <=2;} )){ // < 2
             System.out.print(" removed");
 
         }
+        System.out.println();
+        String x="asdfghj";
+        System.out.println(x.substring(5,7));
+        //System.out.println(x.substring(5,8));
+        StringBuilder c= new StringBuilder("asdfghj");
+        System.out.println("==================================");
+        System.out.println(c.substring(5,7));
+        System.out.println(c.substring(5));
+
 //        arrList.add(null);
 //        System.out.println(arrList);
 //        arrList.remove(1);

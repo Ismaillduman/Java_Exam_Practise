@@ -13,7 +13,8 @@ public class Q108 {
             }
             continue;
         }
-
+        StringBuilder sb = new StringBuilder("TOMATO");
+        System.out.println(sb.reverse().replace(2, 3,"Tomato")); //Line n1
     }
 }
 /*

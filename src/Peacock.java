@@ -5,12 +5,20 @@ import java.time.format.DateTimeFormatter;
 class Bird {
 	public void fly() {
 		System.out.println("Fly.");
+
+	}
+	public void dance() {
+		System.out.println("Dance.");
 	}
 }
 
 	public class Peacock extends Bird {
 		public void dance() {
-			System.out.println("Dance.");
+			System.out.println("Dance Peacok.");
+		}
+		public void fly() {
+			System.out.println("Fly Peaccok.");
+
 		}
 		
 			public static void main(String[] args) {
@@ -21,7 +29,7 @@ class Bird {
 //  A) Bird p = new Peacock();
 //  B) Bird b = new Bird();   Peacock p = (Peacock) b;
   //Peacock b = new Peacock (); Bird p = (Bird) b;
- Bird b = new Peacock ();  Peacock p = (Peacock) b;
+ Bird p = new Peacock ();  //Peacock p = (Peacock) b;
 
 			p.fly();
 			p.dance();

@@ -2,14 +2,14 @@
 
 public class MyField {
     int x;
-    int y;
+    int y=10;
 
     public void doStuff(int x, int y) {
-        x =x;
-        y =this.y;
+        this.x =x;
+       // y =this.y;
 
 //		this.x=x;
-//		this.y=y;
+		this.y=y;
     }
 
     public void display() {
